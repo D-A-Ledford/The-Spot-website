@@ -1,0 +1,56 @@
+/*Assigns all elements with the box sizing property to conform with the grid*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* CSS GRID
+
+12 Column Layout
+
+Assign Parent elements the amount of columns
+They should span.
+*/
+.col-1 { width: 6.5%; }
+.col-2 { width: 15%; }
+.col-3 { width: 23.5%; }
+.col-4 { width: 32%; }
+.col-5 { width: 40.5%; }
+.col-6 { width: 49%; }
+.col-7 { width: 57.5%; }
+.col-8 { width: 66%; }
+.col-9 { width: 74.5%; }
+.col-10 { width: 83%; }
+.col-11 { width: 91.5%; }
+.col-12 { width: 100%; }
+
+/* all columns will float */
+[class*="col-"] {
+    margin: 0 2% 1% 0;
+	float: left;
+	display: block;
+}
+
+[class*="col-"]:last-child {
+	margin-right: 0px;
+}
+/* Floats the element to the right for split middle column layout */
+.right {
+	float: right;
+}
+
+/* Container of floating elements should be labeled with hthe class row
+to prevent collapsing blocks*/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+/***** MOBILE STYLES *****/
+@media only screen and (max-width: 768px) {
+	/* Makes all columns a single column */
+	[class*="col-"] {
+	    width: 100%;
+	}
+}

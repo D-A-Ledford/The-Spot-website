@@ -1,0 +1,11 @@
+[28-Apr-2016 15:23:08 America/Chicago] PHP Warning:  require_once(connect.php): failed to open stream: No such file or directory in /home/grp8sp16/public_html/foodtruck/admin/login.php on line 3
+[28-Apr-2016 15:23:08 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'connect.php' (include_path='.:/opt/php54/lib/php') in /home/grp8sp16/public_html/foodtruck/admin/login.php on line 3
+[28-Apr-2016 17:57:21 America/Chicago] PHP Parse error:  syntax error, unexpected 'productnotes' (T_STRING), expecting ',' or ';' in /home/grp8sp16/public_html/foodtruck/admin/vieworders.php on line 142
+[28-Apr-2016 17:58:29 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/grp8sp16/public_html/foodtruck/admin/vieworders.php on line 142
+[28-Apr-2016 18:37:55 America/Chicago] PHP Fatal error:  Call to undefined function hasSizes() in /home/grp8sp16/public_html/foodtruck/admin/insertorderitem.php on line 373
+[28-Apr-2016 19:05:26 America/Chicago] PHP Fatal error:  Call to undefined method PDO::preapre() in /home/grp8sp16/public_html/foodtruck/admin/insertinventoryhome.php on line 72
+[28-Apr-2016 19:06:14 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/grp8sp16/public_html/foodtruck/admin/insertinventoryhome.php:75
+Stack trace:
+#0 /home/grp8sp16/public_html/foodtruck/admin/insertinventoryhome.php(75): PDOStatement->execute()
+#1 {main}
+  thrown in /home/grp8sp16/public_html/foodtruck/admin/insertinventoryhome.php on line 75

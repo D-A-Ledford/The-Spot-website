@@ -1,0 +1,783 @@
+/* Designer Colors Used */
+/* RED: #EC1E24 */
+/* ORANGE: #F8981D */
+/*front end resolution: 1366 X 768*/
+    
+
+    
+/* GLOBAL STYLES */
+
+body {
+    background: url("../images/pattern2.png");
+  background-position: center;
+  margin:0;
+    padding:0;
+    height:100%;
+    min-width: 250px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0px auto;
+}
+
+header {
+  background-color: #EC1E24;
+  display: block;
+  margin-bottom: 100px;
+}
+
+#mobileheader {
+  display: none;
+}
+
+img {
+  display: inline;
+  vertical-align: middle;
+}
+
+.msgerror {
+  text-align: center;
+  color: #EC1E24;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top:15px;
+}
+/* Display images only in slideshow*/
+#slides img {
+	display: none;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+#showtable {
+	width: 100%;
+	padding-left: 3%;
+}
+#showtable td {
+	padding-left: 2%;
+}
+#caption {
+	font:400 36px/1.3 'Berkshire Swash', Helvetica, sans-serif;
+	color: #2b2b2b;
+	text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+	padding-left:10%;
+}
+#order a{
+	font:400 28px/1.3 'Berkshire Swash', Helvetica, sans-serif;
+	color: #2b2b2b;
+	text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+	border-top: 1px solid #F8981D;
+	border-bottom: 1px solid #F8981D;
+	text-decoration:none;
+	text-align:center;
+	vertical-align: middle;
+	margin-left:10%;
+}
+
+#order a :hover {
+	cursor; pointer;
+}
+
+/***** Navigation Styles *****/
+
+.whitesplat {
+  position: relative;
+  right: 155px;
+  display: none;
+}
+
+nav ul {
+  padding-left: 0px;
+  text-align: center;
+  margin-top: 0px;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000000;
+  font-family: sans-serif;
+  height:200px;
+}
+
+.navlink {
+  margin: 0px auto;
+  margin-top:-25px;
+}
+
+.navlink a {
+  display: inline-block;
+  padding: 90px 15px 90px 0px;
+  background-image: url("../images/mustardsplat.png");
+  background-size: 150px 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 210px;
+}
+
+.navlink a:hover {
+  background-image: url("../images/whitesplatter.png");
+  background-size: 150px 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav li {
+  text-align: center;
+  height: 150px;
+  list-style-type: none;
+}
+
+#center {
+  position: relative;
+  bottom: 80px;
+  height: 300px;
+  width: 300px;
+}
+#ontop {
+  position: relative;
+  bottom: 350px;
+}
+
+/***** SPOT US Page Styles *****/
+.spot {
+background-color: #F8981D;
+opacity:.9;
+padding-left: 0px;
+max-width: 450px;
+}
+
+.spot li{
+  background-color: #F8981D;
+  opacity:.7;
+  display:block;  
+
+}
+
+.spot a {
+  display: block;
+  text-decoration: none;
+  padding: 1px;
+  color:black;
+  text-decoration:none;
+  font-size:2.0em;
+  text-align:center;
+  font-weight:normal;
+  font-family:sans-serif;
+}
+.spot a:hover {
+  background-color: #EC1E24;
+  color: white;
+}
+.description{
+  display:none;
+  font-size:1.5em;
+  text-align:center;
+  font-weight:bold;
+  font-family:sans-serif;
+  color:#EC1E24;    
+        }
+
+/***** MENU Page Styles *****/
+.menu {
+  margin-top:20px;
+  background-color: #F8981D;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.menu img {
+  width: 180px;
+  height: 160px;
+  max-width: 250px;
+  max-height: 200px;
+}
+
+.menu p {
+  text-align: center;
+}
+
+.button {
+  text-align:center;
+  margin:auto;
+}
+.button input:hover {
+  font-family:  sans-serif;
+  font-size: 16px;
+  background-color:#EC1E24;
+  color:#fff9fa;
+  font-weight:bold;
+}
+.button input {
+  font-family:  sans-serif;
+  font-size: 16px;
+  background-color:#fff9fa;
+  color:#EC1E24;
+  font-weight:bold;
+}
+
+.contact {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/***** Category Page Styles *****/
+
+.options {
+  margin-top: 10px;
+  background-color: #FFBD59;
+  text-align: center;
+  max-width: 550px;
+  width: 48%;
+  min-height: 160px;
+}
+
+.options p {
+  overflow: hidden;
+  margin-top:-18px;
+  font-size:14px;
+  text-align:left;
+  padding-left:40px;
+}
+
+
+.product-img {
+  float: left;
+  margin: 5px;
+  max-width: 160px;
+  max-height: 140px;
+}
+
+.button2 {
+  text-align:center;
+  font-size:10px;
+  margin:auto;
+  margin-top:15px;
+  
+}
+.button2 input {
+  font-family:  sans-serif;
+  font-size: 16px;
+  background-color:#EC1E24;
+  color:#fff9fa;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.btndisabled {
+  background-color: #FFBD59;
+  display: none;
+}
+
+
+.button5 {
+  text-align:center;
+  font-size:10px;
+  margin:auto;
+  margin-top:15px;
+}
+.button5 input {
+  font-family:  sans-serif;
+  font-size: 16px;
+  background-color:#EC1E24;
+  color:#fff9fa;
+  font-weight:bold;
+}
+
+.button4 {
+  display:none;
+}
+
+/***** Cart Styles *****/
+ .button3 {
+   border:none !important;
+   width: 160px;
+   height: 130px;
+ }
+
+.message {
+  color: #F8981D;
+  text-align: center;
+}
+
+#sidecart {
+  max-width: 400px; 
+  padding-bottom:10px;
+  border-style: solid;
+  border-color:#F8981D;
+  border-width:2px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#sidecart table {
+  width: 100%;
+  padding-left:15px;
+}
+
+.notesection {
+  border-bottom: 1px solid #F8981D;
+}
+
+
+#remove input, #notes input, .cartbtn input {
+  background:none!important;
+    border:none; 
+    padding:0!important;
+  font-size: 10px;
+  font-weight: bold;
+  color:#F8981D;
+   font-family: Arial,Helvetica,sans-serif;
+  text-transform: uppercase;
+    text-decoration:underline;
+  cursor:pointer;
+}
+
+#remove input {
+  color: #EC1E24;
+}
+
+.cartbtn input {
+  color: #EC1E24;
+  margin-left: 10px;
+}
+
+#prodname {
+  font-weight:bold;
+  font-size: 14px;
+}
+#price {
+  font-size: 14px;
+}
+h3 {
+ text-align:center;
+  font-family:  sans-serif;
+  color:#EC1E24;
+  margin-bottom: -1px;
+  padding-top: 8px;
+  margin-top: -1px;
+  font-size: 16px;
+}
+
+/***** Category Navigation Styles *****/
+
+.catnavbar {
+  display: block;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  margin-top:-32px;
+}
+
+.catnav {
+  padding-left: 0px;
+  text-align: center;
+  background-color: #EC1E24;
+  display: inline-block;
+}
+
+.catnavbar li {
+  display: inline-block;
+  list-style-type: none;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  height: 60px;
+}
+
+.catnavbar a {
+  display: block;
+  padding: 19px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #FFFFFF;
+  transition: .3s background-color;
+}
+
+.catnavbar a:hover {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/*CSS for select drop down*/
+select {
+  border-color:#F8981D;
+}
+
+.dropdown {
+  padding-top: 70px;
+  height: 150%;
+  position: relative
+}
+
+.btndrop {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+}
+
+.btndrop:hover {
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  color: #EC1E24;
+}
+
+.dropdown-menu {
+  display: none;
+  background-color: #FFFFFF;
+  padding: 10px;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 99999;
+  width: 100%;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #EC1E24;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-weight: bold;
+  z-index: 99999;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+/***** Success Page Styles *****/
+.success {
+  text-align:center;
+  width: 100%;
+  float: none;
+  margin: 10px auto;
+}
+
+.success table {
+  width: 100%;
+  text-align: left;
+}
+
+.totalline {
+  border-top: 1px solid #000000;
+}
+
+
+/***** Cart Page Styles *****/
+#info, #ordersum, .success {
+  max-width: 500px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, .7);
+  margin-top:10px;
+  border:solid;
+  border-width:2px;
+  border-color:#F8981D;
+}
+
+#info h3, #ordersum h3, .success h3 {
+  display: block;
+    padding: 20px 0;
+    text-align: center;
+    color: #EC1E24;
+}
+
+#info input[type="text"] {
+   -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color:#383838 ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#info input[type="text"]:focus {
+  box-shadow: 0 0 5px #F8981D ;
+    padding: 3%;
+    border: 1px solid #F8981D;
+}
+#info input[type="radio"] {
+  font: 95% Arial, Helvetica, sans-serif;
+}
+#info label {
+  font-family:sans-serif;
+  font-size:14px;
+}
+#cart {
+  width: 580px;
+  height:500px;
+  margin-top:10px;
+  margin-left:60px;
+  border: 1px solid #ccc;
+}
+
+#cart h3 {
+  padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #EC1E24;
+    margin: -16px -16px 16px -16px;
+}
+.top {
+  margin-left:60px;
+  font-size:18px;
+  font: 95% Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+.note {
+  margin-left:30px;
+  font-size:18px;
+  font: 95% Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+#require {
+  text-align:center;
+}
+.name {
+  font-size:22px;
+  padding-left:40px;
+  
+}
+.amount {
+  font-size:20px;
+  
+}
+.notes {
+	margin-Left;10px;
+	font-size:20px;
+}
+.total {
+  float: right;
+  font-size: 20px;
+  text-align:right;
+  
+}
+.total p {
+  padding-right:30px;
+  border-top: 1px solid #ccc;
+}
+
+/***** Footer Styles *****/
+
+footer {
+  text-align: center;
+  background-color:#EC1E24;
+  color:#FFFFFF;
+}
+
+#footer-em {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+  /* Option 1 - Display Inline 
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  } */
+ 
+  /* Options 2 - Float*/
+  .nav2 li {
+    float: left;
+  }
+  .nav2 ul {
+    overflow: auto;
+    width: 500px;
+    margin: 0 auto;
+  padding-top: 10px;
+  padding-left: 20px;
+  }
+
+/* For Tablet Displays */
+@media only screen and (max-width: 1368px) {
+
+header {
+  margin-bottom: 5px;
+ }
+
+  #center {
+    width: 215px;
+    height: 210px;
+    position: relative;
+    top: -25px;
+  }
+
+  .navlink a {
+    background-size: 100px 100px;
+    font-size: 1.1em;
+  }
+
+  .navlink a:hover {
+    background-size: 120px 120px;
+}
+	.options .col-4, .options .col-8, .options {
+		max-width: 100%;
+		text-align: center;
+	}
+
+	
+	.product-img {
+		display: block;
+		float: none;
+		
+		
+	}
+}
+
+
+/* For Mobile Displays */
+@media only screen and (max-width: 768px) {
+#caption {
+    text-align: center;
+}
+#showtable table, #showtable thead, #showtable tbody, #showtable th, #showtable td, #showtable tr {
+    display:block;
+    text-align: center;}
+#showtable img {
+	width:300px;
+}	
+
+  .wrapper {
+    width: 98%;
+  }
+
+  #mobileheader {
+    display: block;
+    margin: 0px auto;
+    height: 150px;
+    width: 150px;
+  }
+
+  #header {
+      display: none;
+    
+  }
+
+  .options .col-4 {
+    text-align: center;
+  }
+
+  .options {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .spot {
+    text-align: center;
+    max-width: inherit;
+  }
+
+  .navlink a {
+    height: 80px;
+
+    background-size: 80px 80px;
+    font-size: 1em;
+    padding: 27px 10px 27px 0px;
+    font-size: .9em;
+     margin-top:25px;
+  }
+
+  .navlink a:hover {
+    background-size: 80px 80px;
+  }
+
+  #center {
+    display: block;
+  }
+
+ .product-img {
+  float: none;
+ }
+
+ button {
+  cursor: pointer;
+  background-image: none;
+  background-color:#EC1E24;   
+ }
+
+ button:hover {
+  background-color:#F8981D; 
+ }
+
+ .button {
+   background-color:#EC1E24;
+ }
+
+ .button3 {
+   background-color:#EC1E24;
+ }
+
+ .button3:hover {
+  background-color:#EC1E24;
+ }
+
+ select {
+   cursor:pointer;
+   border-color:#EC1E24; 
+ }
+
+ #options {
+   margin-left:0px;
+ }
+
+ #menu {
+   margin-top:0px;
+ }
+
+ .button4 {
+   display:block;
+   text-align:center;
+   margin:auto;
+ }
+ .button4 input {
+  font-family:  sans-serif;
+  font-size: 16px;
+  background-color:#EC1E24;
+  color:#fff9fa;
+  font-weight:bold;
+  width:150px;
+  margin-top: 3px;
+}
+
+#sidecart {
+  max-width: 100%;
+}
+
+.catnav li {
+  width: 45%;
+}
+
+#ordersum, #info {
+  max-width: 100%;
+}
+
+.options .col-8 {
+	text-align:left;
+	width:50%;
+}
+.options .col-4 {
+	width:45%;
+	
+}
+.options p {
+	padding-left:20px;
+}
+p.msgerror {
+	font-size:11px;
+}
+.catnavbar {
+	margin-top:-72px;
+}
+}
